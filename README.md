@@ -284,7 +284,7 @@ const withCSS = require("@zeit/next-css");
 module.exports = withCSS(module.exports);
 ```
 
-After a change in the next config, we have to restart next server.
+After changes in `next.config.js`, we have to restart the server (`yarn dev`).
 
 Now, we can use bootstrap (for CSS) because we work in react we also want react-bootstrap for (components):
 
@@ -292,7 +292,7 @@ Now, we can use bootstrap (for CSS) because we work in react we also want react-
 yarn add bootstrap react-bootstrap
 ```
 
-Now, we can import bootstrap CSS and use some React bootstrap components.
+Now, we can import bootstrap CSS and use some React Bootstrap components.
 
 ```jsx
 // pages/index.js
@@ -401,7 +401,7 @@ We also need a plugin for images:
 yarn add next-images
 ```
 
-And setting in the next config. Add to botom of `next.config.js`.
+And setting in the next config. Add to the bottom of `next.config.js`.
 
 ```js
 ...
@@ -409,6 +409,8 @@ And setting in the next config. Add to botom of `next.config.js`.
 const withImages = require("next-images");
 module.exports = withImages(module.exports);
 ```
+
+After changes in `next.config.js`, we have to restart the server (`yarn dev`).
 
 Now you can import your images into JS.
 
