@@ -97,6 +97,13 @@ Add scripts to `package.json`
   }
 ...
 ```
+## Add prettier
+
+To install prettier formater
+
+```sh
+yarn add prettier
+```
 
 ### Create first page
 
