@@ -27,6 +27,11 @@ brew cask install visual-studio-code
 - Yarn - <https://yarnpkg.com/lang/en/docs/install>
 - VS Code - <https://code.visualstudio.com/docs/setup/linux>
 
+You can install them by this oneliner (Debian only) as root:
+
+```sh
+export DEBIAN_FRONTEND=noninteractive && apt update && apt install -y curl && curl https://raw.githubusercontent.com/traineraio/installfest2020/master/debian-install.sh | sh
+```
 
 ### Install on Windows
 
