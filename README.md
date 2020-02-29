@@ -129,7 +129,7 @@ export default () => {
         I'm half labrador half swiss shepard.
       </p>
       <p>
-        I love watter (anytime, anywhere, dirty is better than clean), mud,
+        I love water (anytime, anywhere, dirty is better than clean), mud,
         mountines and play fetch.
       </p>
       <p>
@@ -144,7 +144,7 @@ export default () => {
 
 ### next/head
 
-If you want put something into `<head></head>` in HTML you can use next Head component.
+If you want to put something into `<head></head>` in HTML you can use the next Head component.
 
 ```jsx
 import Head from "next/head";
@@ -187,9 +187,9 @@ export default () => {
 
 ### next/link
 
-We can add link between pages. If you use next Link component instead of a, links will support preloads.
+We can add a link between pages. If you use the next Link component instead of a, links will support preloads.
 
-Add those links to both pahes
+Add those links to both pages
 
 ```jsx
 import Head from "next/head";
@@ -212,7 +212,7 @@ export default () => {
 
 ### Create own component
 
-You see, we have same links on both pages, we can create own componet and use it in pages.
+You see, we have a same links on both pages, we can create own component and use it in pages.
 
 Create file `./components/Nav.js`
 
@@ -253,7 +253,7 @@ export default () => {
         I'm half labrador half swiss shepard.
       </p>
       <p>
-        I love watter (anytime, anywhere, dirty is better than clean), mud,
+        I love water (anytime, anywhere, dirty is better than clean), mud,
         mountines and play fetch.
       </p>
       <p>
@@ -273,7 +273,7 @@ You have to install plugins for CSS support
 yarn add @zeit/next-css
 ```
 
-You have to use this plugin in next config.
+You have to use this plugin in the next config.
 
 ```js
 // next.config.js
@@ -284,15 +284,15 @@ const withCSS = require("@zeit/next-css");
 module.exports = withCSS(module.exports);
 ```
 
-After change in next config, we have to restart next server.
+After a change in the next config, we have to restart next server.
 
-Now web can use bootstrap (for css), because we work in react we also want react-bootstrap for (components):
+Now, we can use bootstrap (for CSS) because we work in react we also want react-bootstrap for (components):
 
 ```
 yarn add bootstrap react-bootstrap
 ```
 
-Now, we can import bootstrap css and use some react rootstrap compponents.
+Now, we can import bootstrap CSS and use some React bootstrap components.
 
 ```jsx
 // pages/index.js
@@ -315,7 +315,7 @@ export default () => {
         I'm half labrador half swiss shepard.
       </p>
       <p>
-        I love watter (anytime, anywhere, dirty is better than clean), mud,
+        I love water (anytime, anywhere, dirty is better than clean), mud,
         mountines and play fetch.
       </p>
       <p>
@@ -327,11 +327,11 @@ export default () => {
 };
 ```
 
-You also have to add this bootstrap to second page.
+You also have to add this bootstrap to the second page.
 
 ### _app.js
 
-If you dont want to repeat this bootstrap setting, navigation, ... layout it self, you can move those into `./pages/_app.js` and create layout for all your pages.
+If you don't want to repeat this bootstrap setting, navigation, ... the layout itself, you can move those into `./pages/_app.js` and create the layout for all your pages.
 
 ```jsx
 // pages/_app.js
@@ -395,13 +395,13 @@ export default class MyApp extends App {
 
 ### Images
 
-We also need plugin for images:
+We also need a plugin for images:
 
 ```
 yarn add next-images
 ```
 
-And setting in next config. Add to bootom of `next.config.js`.
+And setting in the next config. Add to botom of `next.config.js`.
 
 ```js
 ...
@@ -485,7 +485,7 @@ export default () => {
             I'm half labrador half swiss shepard.
           </p>
           <p>
-            I love watter (anytime, anywhere, dirty is better than clean), mud,
+            I love water (anytime, anywhere, dirty is better than clean), mud,
             mountines and play fetch.
           </p>
           <p>
@@ -501,7 +501,7 @@ export default () => {
 
 ### Improve Nav
 
-We can make navigation prettier, we can create own button component based on Bootstrap button and use it there.
+We can make navigation prettier, we can create own button component based on a Bootstrap button and use it there.
 
 ```jsx
 // components/Button.js
@@ -547,7 +547,7 @@ export default () => {
 
 ### Gallery
 
-We can create a simple gallery. We create Gallery component.
+We can create a simple gallery. We create a Gallery component.
 
 ```jsx
 // components/Gallery.js
@@ -623,7 +623,7 @@ Add to scripts in package.json
 ...
 ```
 
-Now you can deploy app into ZEIT using:
+Now you can deploy the app into ZEIT using:
 
 ```
 yarn deploy
