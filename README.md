@@ -119,7 +119,7 @@ See <http://127.0.0.1:3000>
 I can put there more text
 
 
-```js
+```jsx
 export default () => {
   return (
     <>
@@ -146,7 +146,7 @@ export default () => {
 
 If you want put something into `<head></head>` in HTML you can use next Head component.
 
-```js
+```jsx
 import Head from "next/head";
 
 export default () => {
@@ -165,7 +165,7 @@ export default () => {
 
 Create file `./pages/contact.js`:
 
-```js
+```jsx
 import Head from "next/head";
 
 export default () => {
@@ -191,7 +191,7 @@ We can add link between pages. If you use next Link component instead of a, link
 
 Add those links to both pahes
 
-```js
+```jsx
 import Head from "next/head";
 import Link from "next/link";
 
@@ -216,7 +216,7 @@ You see, we have same links on both pages, we can create own componet and use it
 
 Create file `./components/Nav.js`
 
-```js
+```jsx
 // components/Nav.js
 import Link from "next/link";
 
@@ -235,7 +235,7 @@ export default () => {
 
 Now you can import your component and use it in pages.
 
-```js
+```jsx
 // pages/index.js
 import Head from "next/head";
 import Nav from "../components/Nav";
@@ -294,7 +294,7 @@ yarn add bootstrap react-bootstrap
 
 Now, we can import bootstrap css and use some react rootstrap compponents.
 
-```js
+```jsx
 // pages/index.js
 import Head from "next/head";
 import Nav from "../components/Nav";
@@ -333,7 +333,7 @@ You also have to add this bootstrap to second page.
 
 If you dont want to repeat this bootstrap setting, navigation, ... layout it self, you can move those into `./pages/_app.js` and create layout for all your pages.
 
-```js
+```jsx
 // pages/_app.js
 import App from "next/app";
 
@@ -361,7 +361,7 @@ You can add styles to components using prop `styles={{margin: '10px'}}` for exam
 
 Put some styles to our layout.
 
-```js
+```jsx
 // pages/_app.js
 
 import App from "next/app";
@@ -416,7 +416,7 @@ We can create own Image component based on Bootstrap Image.
 
 We can create `./components/Image.js` with:
 
-```js
+```jsx
 // components/Image.js
 
 import React from "react";
@@ -437,7 +437,7 @@ export default class MyImage extends React.Component {
 
 Now we can use this Image component in pages.
 
-```js
+```jsx
 // pages/contact.js
 import Image from "../components/Image";
 import Head from "next/head";
@@ -462,7 +462,7 @@ export default () => {
 
 Now we can add image and Bootstrap grid into about me page:
 
-```js
+```jsx
 // pages/index.js
 
 import Row from "react-bootstrap/Row";
@@ -505,7 +505,7 @@ export default () => {
 
 We can make navigation prettier, we can create own button component based on Bootstrap button and use it there.
 
-```js
+```jsx
 // components/Button.js
 
 import Button from "react-bootstrap/Button";
@@ -524,7 +524,7 @@ export default props => {
 
 Now we can improve Nav
 
-```js
+```jsx
 // components/Nav.js
 
 import Button from "../components/Button";
@@ -551,7 +551,7 @@ export default () => {
 
 We can create a simple gallery. We create Gallery component.
 
-```js
+```jsx
 // components/Gallery.js
 
 import Row from "react-bootstrap/Row";
@@ -576,7 +576,7 @@ export default (props) => {
 
 And use it in new page `pages/gallery.js`
 
-```js
+```jsx
 // pages/gallery.js
 
 import Head from "next/head";
