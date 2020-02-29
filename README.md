@@ -448,6 +448,7 @@ Now we can use this Image component in pages.
 // pages/contact.js
 import Image from "../components/Image";
 import Head from "next/head";
+import ondzuznela from "../data/ondzuznela.jpg";
 
 export default () => {
   return (
@@ -455,7 +456,7 @@ export default () => {
       <Head>
         <title>Contact me</title>
       </Head>
-      <Image src={require("../data/ondzuznela.jpg")} />
+      <Image src={ondzuznela} />
       <p>
         I'm <a href="https://instagram.com/jsemnela">@jsemnela</a> on Instagram,
         you can write me there. You can also follow my owners{" "}
@@ -476,6 +477,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "../components/Image";
 import Head from "next/head";
+import nela from "../data/nela.jpg";
 
 export default () => {
   return (
@@ -485,7 +487,7 @@ export default () => {
       </Head>
       <Row>
         <Col sm={6}>
-          <Image src={require("../data/nela.jpg")} />
+          <Image src={nela} />
         </Col>
         <Col sm={6}>
           <p>
@@ -585,25 +587,34 @@ And use it in new page `pages/gallery.js`
 
 ```jsx
 // pages/gallery.js
-
 import Head from "next/head";
 import Gallery from "../components/Gallery";
+import nela9 from "../data/nela9.jpg";
+import nela8 from "../data/nela8.jpg";
+import nela7 from "../data/nela7.jpg";
+import nela6 from "../data/nela6.jpg";
+import nela5 from "../data/nela5.jpg";
+import nela4 from "../data/nela4.jpg";
+import nela3 from "../data/nela3.jpg";
+import nela2 from "../data/nela2.jpg";
+import nela1 from "../data/nela1.jpg";
+
 
 export default () => {
   return (
     <>
-      <Head><title>@jsemela - About me</title></Head>
+      <Head><title>@jsemela - Gallery</title></Head>
       <Gallery
         images={[
-          require("../data/nela9.jpg"),
-          require("../data/nela8.jpg"),
-          require("../data/nela7.jpg"),
-          require("../data/nela6.jpg"),
-          require("../data/nela5.jpg"),
-          require("../data/nela4.jpg"),
-          require("../data/nela3.jpg"),
-          require("../data/nela2.jpg"),
-          require("../data/nela1.jpg")
+          nela9,
+          nela8,
+          nela7,
+          nela6,
+          nela5,
+          nela4,
+          nela3,
+          nela2,
+          nela1,
         ]}
       />
     </>
