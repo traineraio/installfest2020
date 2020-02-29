@@ -622,12 +622,12 @@ export default () => {
 };
 ```
 
-### Deploy
+### Deploy to Zeit
 
-Install now
+Install `now`, client for [ZEIT](https://zeit.co)
 
 ```
-yarn add now
+yarn add now --dev
 ```
 
 Add to scripts in package.json
@@ -637,14 +637,30 @@ Add to scripts in package.json
 "scripts": {
   ...
   "now-build": "yarn run static",
-  "deploy": "now",
+  "deploy": "now"
   ...
 }
 ...
 ```
 
-Now you can deploy the app into ZEIT using:
+Now you can deploy the app into [ZEIT](https://zeit.co) using:
 
 ```
 yarn deploy
 ```
+
+If you want to deploy again to production, you have to use:
+
+```
+yarn deploy --prod
+```
+
+### Static Build
+
+If you want to build a static output (HTML, CSS, JS) which you can host anywhere (S3, Nginx, any hosting), you have to use:
+
+```
+yarn static
+```
+
+and your file will be at `out/` directory.
