@@ -415,6 +415,7 @@ And setting in the next config. Add to the bottom of `next.config.js`.
 
 const withImages = require("next-images");
 module.exports = withImages(module.exports);
+...
 ```
 
 After changes in `next.config.js`, we have to restart the server (`yarn dev`).
