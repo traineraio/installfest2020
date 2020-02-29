@@ -378,7 +378,7 @@ export default class MyApp extends App {
       <Container style={{ maxWidth: "45em" }}>
         <Nav />
         <Component {...pageProps} />
-        <p style={{ marginTop: "30px" }}>Made for LinuxDays 2019</p>
+        <p style={{ marginTop: "30px" }}>Made for Install Fest 2020</p>
         <style jsx global>{`
           body {
             overflow-y: scroll;
