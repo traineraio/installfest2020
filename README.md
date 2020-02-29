@@ -1,7 +1,8 @@
-# React Workshop @ LinuxDays 2019
+# React Workshop @ Install Fest 2020
 
     2019 Ondrej Sika <ondrej@ondrejsika.com>
-    https://github.com/ondrejsika/linuxdays2019-react
+    2020 Zuzana Jeschke <zuz@zuzjes.com>
+    https://github.com/traineraio/installfest2020
 
 
 ## Workshop Requirements
