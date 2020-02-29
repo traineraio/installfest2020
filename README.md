@@ -435,6 +435,13 @@ export default (props) => {
 }
 ```
 
+We need some images, we can download Nela's dataset:
+
+```sh
+git clone https://github.com/ondrejsika/jsemnela-data data
+rm -rf data/.git
+```
+
 Now we can use this Image component in pages.
 
 ```jsx
