@@ -47,17 +47,6 @@ choco install vscode
 
 ## Setup Project
 
-### Gitignore
-
-```gitignore
-# .gitignore
-node_modules
-.next
-out
-.vscode
-.DS_Store
-```
-
 ### Editorconfig
 
 ```editorconfig
@@ -71,6 +60,17 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 end_of_line = lf
 max_line_length = null
+```
+
+### Gitignore
+
+```gitignore
+# .gitignore
+node_modules
+.next
+out
+.vscode
+.DS_Store
 ```
 
 ### Create package.json
