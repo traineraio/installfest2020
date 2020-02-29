@@ -625,8 +625,8 @@ Add to scripts in package.json
 ...
 ```
 
-Now you can deploy app into Zeit.co using:
+Now you can deploy app into ZEIT using:
 
 ```
-now
+yarn deploy
 ```
